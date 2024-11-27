@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: django-config
+data:
+  DATABASE_URL: "postgres://myuser:YOUR_POSTGRES_PASSWORD@postgres:5432/mydatabase"
+  RABBITMQ_URL: "amqp://myuser:YOUR_RABBITMQ_PASSWORD@rabbitmq:5672/"
